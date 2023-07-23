@@ -16,17 +16,17 @@ export default function InputSlider({ child }) {
 
   return (
     <div className="flex flex-col justify-start items-start w-full">
-      <p className="font-semibold text-xs mt-4">{child}</p>
+      <p className="font-semibold text-xs max-xs:text-sm max-xs:mt-6 mt-4">{child}</p>
       <div className="flex flex-row justify-between items-center mx-auto w-full">
         <Slider
-          className="mt-1"
+          className="mt-1 mx-1"
           value={value}
           onChange={handleSliderChange}
           aria-labelledby="input-slider"
           size="small"
         />
         <Input
-          className="pl-10"
+          className="pl-5"
           value={child == "retirement age" ? `${value}` : `${value}%`}
           aria-disabled
           disableUnderline

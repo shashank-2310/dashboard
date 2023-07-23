@@ -27,6 +27,7 @@ export default {
       },
       colors: {
         "our-blue": '#2306fa',
+        "-our-light-blue": '#7996FF',
       },
     },
   },

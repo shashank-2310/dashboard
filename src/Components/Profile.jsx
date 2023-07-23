@@ -2,7 +2,7 @@ import mark from "../assets/mz.png";
 
 export default function Profile() {
   return (
-    <div className="bg-[#f9f5f5] max-xs:bg-white text-left h-screen w-auto max-xs:w-full flex flex-col justify-start items-start max-xs:justify-start max-xs:items-center max-xs:overflow-y-scroll">
+    <div className="bg-[#f9f5f5] max-xs:bg-white text-left h-screen max-xs:h-full w-auto max-xs:w-full flex flex-col justify-start items-start max-xs:justify-start max-xs:items-center max-xs:overflow-y-scroll">
       <div className="font-pt-serif flex flex-row justify-start items-start mt-8 max-xs:mt-3">
         <img
           src={mark}
@@ -65,7 +65,7 @@ export default function Profile() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-start items-start max-xs:h-full max-xs:w-3/4 max-xs:rounded-3xl max-xs:mt-5 max-xs:mb-2 max-xs:p-7 max-xs:bg-opacity-50 max-xs:bg-[#f1eded] pt-5 mx-auto font-mulish">
+      <div className="flex flex-col justify-start items-start max-xs:h-max max-xs:w-3/4 max-xs:rounded-3xl max-xs:mt-5 max-xs:mb-2 max-xs:p-7 max-xs:bg-opacity-50 max-xs:bg-[#f1eded] pt-5 mx-auto font-mulish">
         <p className="capitalize font-pt-serif font-semibold tracking-wide text-base max-xs:text-lg ">
           recent transactions
         </p>

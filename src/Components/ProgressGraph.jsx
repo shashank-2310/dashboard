@@ -13,18 +13,18 @@ export default function ProgressGraph() {
   });
 
   return (
-    <div className="font-mulish flex flex-row justify-between items-center w-2/5 mr-auto ml-20 overflow-hidden ">
-      <div className="flex flex-col justify-center items-center px-3 py-1 tracking-wide font-bold ">
+    <div className="font-mulish max-xs:text-sm text-xs flex flex-row max-xs:flex-grow justify-between items-center w-2/5 mr-auto ml-20 overflow-hidden max-xs:w-full max-xs:mx-auto ">
+      <div className="flex flex-col justify-center items-center px-3 max-xs:px-2 py-1 tracking-wide font-bold ">
         <CircularProgressbar value={p1} text={`${p1}%`} styles={styles} />
-        <p className="text-xs py-2 font-semibold">Average</p>
+        <p className="py-2 font-semibold">Average</p>
       </div>
-      <div className="flex flex-col justify-center items-center px-3 py-1 tracking-wide font-bold ">
+      <div className="flex flex-col justify-center items-center px-3 max-xs:px-2 py-1 tracking-wide font-bold ">
         <CircularProgressbar value={p2} text={`${p2}%`} styles={styles} />
-        <p className="text-xs py-2 font-semibold">Top</p>
+        <p className="py-2 font-semibold">Top</p>
       </div>
-      <div className="flex flex-col justify-center items-center px-3 py-1 tracking-wide font-bold ">
+      <div className="flex flex-col justify-center items-center px-3 max-xs:px-2 py-1 tracking-wide font-bold ">
         <CircularProgressbar value={p3} text={`${p3}%`} styles={styles} />
-        <p className="text-xs py-2 font-semibold">Me</p>
+        <p className=" py-2 font-semibold">Me</p>
       </div>
     </div>
   );
